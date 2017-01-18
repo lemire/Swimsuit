@@ -1,7 +1,7 @@
 import Foundation
 import Dispatch
 
-struct Swimsuit {
+public struct Swimsuit {
     
     public static func nanotime(block: () -> ()) -> UInt64 {
         let t1 = DispatchTime.now()        
