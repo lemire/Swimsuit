@@ -8,5 +8,6 @@ struct Swimsuit {
         block()
         let t2 = DispatchTime.now()   
         let delay = t2.uptimeNanoseconds - t1.uptimeNanoseconds
+        return delay
     }
 }
