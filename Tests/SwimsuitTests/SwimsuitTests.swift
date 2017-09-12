@@ -3,15 +3,10 @@ import XCTest
 
 class SwimsuitTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual(Swimsuit().text, "Hello, World!")
+        XCTAssertEqual(1 + 3, 4) // being silly
     }
 
-
-    static var allTests : [(String, (SwimsuitTests) -> () throws -> Void)] {
-        return [
-            ("testExample", testExample),
-        ]
+    static var allTests: [(String, (SwimsuitTests) -> () throws -> Void)] {
+        return [("testExample", testExample)]
     }
 }

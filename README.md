@@ -40,3 +40,11 @@ You can run your example as follows:
 swift build --configuration release
 .build/release/fun
 ```
+
+## For Xcode users (Mac Only)
+
+```bash
+$ swift package generate-xcodeproj
+generated: ./Bitset.xcodeproj
+$ open ./Bitset.xcodeproj
+```
