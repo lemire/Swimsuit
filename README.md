@@ -19,12 +19,17 @@ import PackageDescription
 let package = Package(
     name: "fun",
     dependencies: [
-   .Package(url: "https://github.com/lemire/Swimsuit.git",  majorVersion: 0)
+   .package(url: "https://github.com/lemire/Swimsuit.git", from: "0.1.2")
+    ],
+    targets: [
+        .target(
+            name: "fun",
+            dependencies: ["Swimsuit"]),
     ]
 )
 ```
 
-Edit ``Sources/main.swift`` so that it looks something like this :
+Edit ``main.swift`` (in Sources) so that it looks something like this :
 
 ```swift
 import Swimsuit;
@@ -38,7 +43,7 @@ You can run your example as follows:
 
 ```bash
 swift build --configuration release
-.build/release/fun
+$(swift build   --configuration release --show-bin-path)/fun
 ```
 
 ## For Xcode users (Mac Only)
